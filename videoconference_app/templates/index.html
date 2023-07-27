@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="icon" type="image/x-icon" href="../static/images/icon.png">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div class="intro">
+        <h1>Welcome to my Video Conferencing App!</h1>
+        <!-- create a signup and signin button-->
+        <a href="{% url 'login' %}" class="button"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+        <a href="{% url 'register' %}" class="button"><i class="fa-solid fa-right-from-bracket"></i> Sign Up</a>
+    </div>
+  </body>
+</head>
+</html>
